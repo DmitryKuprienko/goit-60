@@ -1,12 +1,76 @@
+/* Fonts */
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway'),
+        url('../fonts/Raleway-Regular.woff2') format('woff2'),
+        url('../fonts/Raleway-Regular.woff') format('woff'),
+        url('../fonts/Raleway-Regular.ttf') format('truetype'),
+        url('../fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway'),
+        url('../fonts/Raleway-Bold.woff2') format('woff2'),
+        url('../fonts/Raleway-Bold.woff') format('woff'),
+        url('../fonts/Raleway-Bold.ttf') format('truetype'),
+        url('../fonts/Raleway-Bold.svg#Raleway-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display'),
+        url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-Bold.woff') format('woff'),
+        url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+        url('../fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Variables */
 :root {
     --color-primary: #fff;
     --color-accent: #d4c17f;
+
+    --color-background-primary: #242b33;
+
+    --font-family-primary: 'Raleway', sans-serif;
+    --font-family-title: 'Playfair Display', serif;
 }
 
 /* Base */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--color-primary);
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: var(--font-family-primary);
+    font-weight: 400;
+    background-color:var(--color-background-primary);
+}
+
+::selection {
+    color: var(--color-primary);
+    background-color: var(--color-accent);
+}
+
+/* UI */
 .title {
     color: var(--color-accent);
+    font-family: var(--font-family-title);
+    font-size: 36px;
+    line-height: 1.3333;
 }
 
 .button {
@@ -26,16 +90,37 @@
 
 /* Header */
 .header {
-    background-color: gray;
 }
 
 /* Menu */
-.menu-link,
-.submenu-link {
+.link {
     color: var(--color-primary);
+    font-size: 14px;
+    line-height: 1.15;
+    text-decoration: none;
 }
 
-.menu-link:hover,
-.submenu-link:hover {
+.link:hover {
     color: var(--color-accent);
+    text-decoration: underline;
+}
+
+/* Submenu */
+.submenu {
+    display: none;
+}
+
+.header-menu-item:focus-within .submenu {
+    display: block;
+}
+
+/* Hero section */
+.hero-title {
+    font-size: 48px;
+    text-align: center;
+}
+
+/* Footer */
+.footer-contacts {
+    font-style: normal;
 }
