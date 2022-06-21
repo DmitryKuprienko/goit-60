@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 4</title>
+    <title>Lesson 6</title>
 
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,60 +15,70 @@
 <body>
     <header class="header">
         <div class="container">
-            <a href="/">
-                <img src="./assets/images/logo.svg" width="165" height="70" alt="Житловий комплекс HouseVop">
-            </a>
-            <nav>
-                <ul class="header-menu">
-                    <li class="header-menu-item">
-                        <a class="link" href="#">Про комплекс</a>
-                    </li>
-                    <li class="header-menu-item">
-                        <a class="link" href="#">Район</a>
-                    </li>
-                    <li class="header-menu-item">
-                        <a class="link" href="#">Каталог квартир</a>
-                        <ul class="submenu">
-                            <li class="submenu-item">
-                                <a class="link" href="#">Стандарт</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a class="link" href="#">Комфорт</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a class="link" href="#">Люкс</a>
-                            </li>
-                            <li class="submenu-item">
-                                <a class="link" href="#">Супер Люкс</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="header-menu-item">
-                        <a class="link" href="#">Іпотека</a>
-                    </li>
-                    <li class="header-menu-item">
-                        <a class="link" href="#">Контакти</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="header-inner">
+                <a href="/">
+                    <img src="./assets/images/logo.svg" width="165" height="70" alt="Житловий комплекс HouseVop">
+                </a>
+                <nav>
+                    <ul class="header-menu">
+                        <li class="header-menu-item">
+                            <a class="link" href="#">Про комплекс</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="link" href="#">Район</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="link" href="#">Каталог квартир</a>
+                            <ul class="submenu">
+                                <li class="submenu-item">
+                                    <a class="link" href="#">Стандарт</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a class="link" href="#">Комфорт</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a class="link" href="#">Люкс</a>
+                                </li>
+                                <li class="submenu-item">
+                                    <a class="link" href="#">Супер Люкс</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="link" href="#">Іпотека</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="link" href="#">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
         <section class="hero-section section">
             <div class="container">
-                <h1 class="hero-title title">Житловий комплекс в історичному центрі</h1>
-                <a href="#benefits">
-                    <img src="./assets/images/mouse.svg" alt="Перейти до наступної секкції">
-                </a>
-                <address>
-                    <a class="link" href="#">вул. Садова 10-15</a>
-                    <a class="link" href="tel:+380991234567">+38 (099) 123-45-67</a>
-                </address>
+                <div class="hero-section-inner">
+                    <h1 class="hero-section-title title">Житловий комплекс в історичному центрі</h1>
+                    <a class="hero-section-mouse" href="#benefits">
+                        <img src="./assets/images/icons/mouse.svg" alt="Перейти до наступної секкції">
+                    </a>
+                    <address class="contact">
+                        <a class="contact-item link" href="#">
+                            <img class="contact-image" src="./assets/images/icons/placeholder.svg" aria-hidden="true" alt="">
+                            вул. Садова 10-15
+                        </a>
+                        <a class="contact-item link" href="tel:+380991234567">
+                            <img class="contact-image" src="./assets/images/icons/phone.svg" aria-hidden="true" alt="">
+                            +38 (099) 123-45-67
+                        </a>
+                    </address>
+                </div>
             </div>
         </section>
         <section class="section" id="benefits">
             <div class="container">
-                <h2 class="title">Наші переваги</h2>
+                <h2 class="title visually-hidden">Наші переваги</h2>
                 <ul>
                     <li>
                         <img src="#" alt="#">
@@ -85,6 +95,29 @@
                     <li>
                         <img src="#" alt="#">
                         <span></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="flat-section section">
+            <div class="container">
+                <h2 class="title">Наші квартири</h2>
+                <ul class="flat-section-list">
+                    <li class="flat-section-item">
+                        <img class="flat-section-image" src="./assets/images/flat-standart.jpg" alt="">
+                        <span class="flat-section-name">Стандарт — 1 поверх</span>
+                    </li>
+                    <li class="flat-section-item">
+                        <img class="flat-section-image" src="./assets/images/flat-standart.jpg" alt="">
+                        <span class="flat-section-name">Комфорт — 2 поверхи</span>
+                    </li>
+                    <li class="flat-section-item">
+                        <img class="flat-section-image" src="./assets/images/flat-standart.jpg" alt="">
+                        <span class="flat-section-name">Люкс — 3 поверхи</span>
+                    </li>
+                    <li class="flat-section-item">
+                        <img class="flat-section-image" src="./assets/images/flat-standart.jpg" alt="">
+                        <span class="flat-section-name">Супер Люкс — 4 поверхи</span>
                     </li>
                 </ul>
             </div>
@@ -134,14 +167,16 @@
             </div>
         </section>
         <section class="section">
-            <h2 class="title">Хочете подивитися?</h2>
-            <p>
-                Житловий комплекс в історичному центрі міста HouseVOP завершив будівництво та здав 
-                об’єкт в експлаутацію <time datetime="2021-03-11">11 березня 2021 року</time>. Якщо ви маєте бажання подивитися квартиру, 
-                чекаємо на Вас. Тут просто повинен бути будь-який текст, для того щоб збільшити його 
-                об’єм, тому що фанатазії придумати щось нове - вже немає. Якщо у когось є ідея - завжди велкам!
-            </p>
-            <button class="button" type="button">Подивитись район</button>
+            <div class="container">
+                <h2 class="title">Хочете подивитися?</h2>
+                <p>
+                    Житловий комплекс в історичному центрі міста HouseVOP завершив будівництво та здав 
+                    об’єкт в експлаутацію <time datetime="2021-03-11">11 березня 2021 року</time>. Якщо ви маєте бажання подивитися квартиру, 
+                    чекаємо на Вас. Тут просто повинен бути будь-який текст, для того щоб збільшити його 
+                    об’єм, тому що фанатазії придумати щось нове - вже немає. Якщо у когось є ідея - завжди велкам!
+                </p>
+                <button class="button" type="button">Подивитись район</button>
+            </div>
         </section>
         <section class="section">
             <div class="container">
@@ -156,47 +191,76 @@
             </div>
         </section>
         <section class="section">
-            <h2 class="title">Відео огляд житлового комплексу</h2>
-            <video controls loop muted>
-                <source src="./assets/videos/test_video.webm" type="video/webm">
-                <source src="./assets/videos/test_video.mp4" type="video/mp4">
-                Нажаль, це відео не підтримується вашим браузером :(
-            </video>
+            <div class="container">
+                <h2 class="title visually-hidden">Відео огляд житлового комплексу</h2>
+                    <video controls loop muted>
+                    <source src="./assets/videos/test_video.webm" type="video/webm">
+                    <source src="./assets/videos/test_video.mp4" type="video/mp4">
+                    Нажаль, це відео не підтримується вашим браузером :(
+                </video>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>© 2022 Всі права захищені. HouseVOP</p>
-        <address class="footer-contacts">
-            <ul class="footer-menu">
-                <li class="footer-menu-item">
-                    <a class="link" href="#">Про комплекс</a>
-                </li>
-                <li class="footer-menu-item">
-                    <a class="link" href="#">Район</a>
-                </li>
-                <li class="footer-menu-item">
-                    <a class="link" href="#">Каталог квартир</a>
-                </li>
-                <li class="footer-menu-item">
-                    <a class="link" href="#">Іпотека</a>
-                </li>
-                <li class="footer-menu-item">
-                    <a class="link" href="#">Контакти</a>
-                </li>
-            </ul>
-            <ul>
-                <li>Адреса: <a href="#">вул. Садова 10-15</a></li>
-                <li>Телефон: <a href="tel:+380991234567">+38 (099) 123-45-67</a></li>
-                <li>Відділ продажу: <time datetime="10:00">10:00</time> - <time datetime="20:00">20:00</time></li>
-                <li>E-mail: <a href="mailto:vip@housevip.ru">vip@housevip.ru</a></li>
-            </ul>
-            <!-- <ul>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-            </ul> -->
-        </address>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-info">
+                    <a href="/">
+                        <img src="./assets/images/logo.svg" width="165" height="70" alt="Житловий комплекс HouseVop">
+                    </a>
+                    <p>© 2022 Всі права захищені. HouseVOP</p>
+                </div>
+                <nav>
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item">
+                            <a class="link" href="#">Про комплекс</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="link" href="#">Район</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="link" href="#">Каталог квартир</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="link" href="#">Іпотека</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a class="link" href="#">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <address class="footer-contacts">
+                    <ul>
+                        <li>Адреса: <a class="link" href="#">вул. Садова 10-15</a></li>
+                        <li>Телефон: <a class="link" href="tel:+380991234567">+38 (099) 123-45-67</a></li>
+                        <li>Відділ продажу: <time datetime="10:00">10:00</time> - <time datetime="20:00">20:00</time></li>
+                        <li>E-mail: <a class="link" href="mailto:vip@housevip.ru">vip@housevip.ru</a></li>
+                    </ul>
+                    <ul class="socials">
+                        <li>
+                            <a class="socials-link" href="#">
+                                <img class="socials-img" src="./assets/images/icons/socials/youtube.svg" alt="YouTube">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="socials-link" href="#">
+                                <img class="socials-img" src="./assets/images/icons/socials/vk.svg" alt="Vkontakte">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="socials-link" href="#">
+                                <img class="socials-img" src="./assets/images/icons/socials/facebook.svg" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="socials-link" href="#">
+                                <img class="socials-img" src="./assets/images/icons/socials/instagram.svg" alt="Instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
