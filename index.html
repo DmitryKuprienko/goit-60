@@ -61,15 +61,35 @@
                 <div class="hero-section-inner">
                     <h1 class="hero-section-title title">Житловий комплекс в історичному центрі</h1>
                     <a class="hero-section-mouse" href="#benefits">
-                        <img src="./assets/images/icons/mouse.svg" alt="Перейти до наступної секкції">
+                        <!-- <img src="./assets/images/icons/mouse.svg" alt="Перейти до наступної секції"> -->
+
+                        <!-- <svg width="40" height="40" viewBox="0 0 40 40" aria-label="Перейти до наступної секції">
+                            <g clip-path="url(#clip0_1_20)">
+                            <path d="M19.9689 0C13.4811 0 8.20313 5.27802 8.20313 11.7657V28.2343C8.20313 34.722 13.4811 40 19.9689 40C26.4566 40 31.7346 34.722 31.7346 28.2343V11.7657C31.7346 5.27802 26.4566 0 19.9689 0ZM29.3347 28.2343C29.3347 33.3984 25.1331 37.6001 19.9689 37.6001C14.8047 37.6001 10.603 33.3984 10.603 28.2343V11.7657C10.603 6.60156 14.8047 2.3999 19.9689 2.3999C25.1331 2.3999 29.3347 6.60156 29.3347 11.7657V28.2343Z" fill="#D4C17F"/>
+                            <path d="M19.9692 7.95715C19.3063 7.95715 18.7692 8.49426 18.7692 9.1571V14.6802C18.7692 15.3427 19.3063 15.8801 19.9692 15.8801C20.6317 15.8801 21.1691 15.3427 21.1691 14.6802V9.1571C21.1691 8.49426 20.632 7.95715 19.9692 7.95715Z" fill="#D4C17F"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_20">
+                            <rect width="40" height="40" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg> -->
+
+                        <svg class="hero-section-mouse-icon" aria-label="Перейти до наступної секції">
+                            <use href="./assets/images/icons.svg#icon-mouse"></use>
+                        </svg>
                     </a>
                     <address class="contact">
-                        <a class="contact-item link" href="#">
-                            <img class="contact-image" src="./assets/images/icons/placeholder.svg" aria-hidden="true" alt="">
+                        <a class="contact-link link" href="#">
+                            <svg class="contact-icon" aria-hidden="true">
+                                <use href="./assets/images/icons.svg#icon-placeholder"></use>
+                            </svg>
                             вул. Садова 10-15
                         </a>
-                        <a class="contact-item link" href="tel:+380991234567">
-                            <img class="contact-image" src="./assets/images/icons/phone.svg" aria-hidden="true" alt="">
+                        <a class="contact-link link" href="tel:+380991234567">
+                            <svg class="contact-icon" aria-hidden="true">
+                                <use href="./assets/images/icons.svg#icon-phone"></use>
+                            </svg>
                             +38 (099) 123-45-67
                         </a>
                     </address>
@@ -79,22 +99,30 @@
         <section class="section" id="benefits">
             <div class="container">
                 <h2 class="title visually-hidden">Наші переваги</h2>
-                <ul>
-                    <li>
-                        <img src="#" alt="#">
-                        <span></span>
+                <ul class="benefit-list">
+                    <li class="benefit-item">
+                        <svg class="benefit-icon" aria-hidden="true">
+                            <use href="./assets/images/icons.svg#icon-bench"></use>
+                        </svg>
+                        <span class="benefit-caption">Поряд історичні парки та сквери</span>
                     </li>
-                    <li>
-                        <img src="#" alt="#">
-                        <span></span>
+                    <li class="benefit-item">
+                        <svg class="benefit-icon" aria-hidden="true">
+                            <use href="./assets/images/icons.svg#icon-building"></use>
+                        </svg>
+                        <span class="benefit-caption">Повністю облаштований</span>
                     </li>
-                    <li>
-                        <img src="#" alt="#">
-                        <span></span>
+                    <li class="benefit-item">
+                        <svg class="benefit-icon" aria-hidden="true">
+                            <use href="./assets/images/icons.svg#icon-fountain"></use>
+                        </svg>
+                        <span class="benefit-caption">10 фонтанів на території</span>
                     </li>
-                    <li>
-                        <img src="#" alt="#">
-                        <span></span>
+                    <li class="benefit-item">
+                        <svg class="benefit-icon" aria-hidden="true">
+                            <use href="./assets/images/icons.svg#icon-bicycle"></use>
+                        </svg>
+                        <span class="benefit-caption">6 км велодоріжек</span>
                     </li>
                 </ul>
             </div>
@@ -238,25 +266,33 @@
                         <li>Відділ продажу: <time datetime="10:00">10:00</time> - <time datetime="20:00">20:00</time></li>
                         <li>E-mail: <a class="link" href="mailto:vip@housevip.ru">vip@housevip.ru</a></li>
                     </ul>
-                    <ul class="socials">
+                    <ul class="social-list">
                         <li>
-                            <a class="socials-link" href="#">
-                                <img class="socials-img" src="./assets/images/icons/socials/youtube.svg" alt="YouTube">
+                            <a class="social-link" href="#">
+                                <svg class="social-icon" aria-label="Посилання на YouTube">
+                                    <use href="./assets/images/icons.svg#icon-youtube"></use>
+                                </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="socials-link" href="#">
-                                <img class="socials-img" src="./assets/images/icons/socials/vk.svg" alt="Vkontakte">
+                            <a class="social-link" href="#">
+                                <svg class="social-icon" aria-label="Посилання на Instagram">
+                                    <use href="./assets/images/icons.svg#icon-instagram"></use>
+                                </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="socials-link" href="#">
-                                <img class="socials-img" src="./assets/images/icons/socials/facebook.svg" alt="Facebook">
+                            <a class="social-link" href="#">
+                                <svg class="social-icon" aria-label="Посилання на Facebook">
+                                    <use href="./assets/images/icons.svg#icon-facebook"></use>
+                                </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="socials-link" href="#">
-                                <img class="socials-img" src="./assets/images/icons/socials/instagram.svg" alt="Instagram">
+                            <a class="social-link" href="#">
+                                <svg class="social-icon" aria-label="Посилання на Vkontakte">
+                                    <use href="./assets/images/icons.svg#icon-vk"></use>
+                                </svg>
                             </a>
                         </li>
                     </ul>
