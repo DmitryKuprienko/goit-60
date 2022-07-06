@@ -169,7 +169,7 @@ main {
 /* Header */
 .header {
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     top: 0;
     left: 0;
     width: 100%;
@@ -245,6 +245,27 @@ main {
 
 .hero-section-mouse {
     margin-bottom: 200px;
+    /* animation-name: bounce;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate; */
+    animation: bounce 3s linear infinite alternate;
+}
+
+.hero-section-mouse:hover {
+    animation-play-state: paused;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
 }
 
 .hero-section-mouse-icon {
@@ -314,18 +335,22 @@ main {
     margin: -15px;
 }
 
-.flat-section-item {
-    position: relative;
+.flat-section-item-wrap {
     flex-basis: 50%;
     padding: 16px;
 }
 
+.flat-section-item {
+    position: relative;
+    overflow: hidden;
+}
+
 .flat-section-item::before {
     position: absolute;
-    top: 16px;
-    left: 16px;
-    right: 16px;
-    bottom: 16px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: linear-gradient(180deg, transparent 0%, var(--color-background-primary) 100%);
     content: '';
 }
@@ -340,6 +365,23 @@ main {
     bottom: 2.5rem;
     left: 3rem;
     display: block;
+}
+
+.flat-section-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem 2rem;
+    background-color: var(--color-background-primary);
+    transform: translateY(100%);
+    transition: transform 0.4s;
+    opacity: 0.8;
+}
+
+.flat-section-item:hover .flat-section-overlay {
+    transform: translateY(0);
 }
 
 /* Prices table */
@@ -432,4 +474,41 @@ main {
 
 .footer-contacts {
     font-style: normal;
+}
+
+/* Modal */
+.backdrop {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36, 43, 51, 0.6);
+    transform: scale(1);
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 540px;
+    min-height: 600px;
+    background-color: var(--color-background-primary);
+    box-shadow: 0px 0px 6px 6px rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+}
+
+.modal-close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }

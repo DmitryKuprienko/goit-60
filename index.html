@@ -9,7 +9,8 @@
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&display=swap" rel="stylesheet"> -->
-
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -131,30 +132,41 @@
         </section>
         <section class="flat-section section">
             <div class="container">
-                <h2 class="title">Наші квартири</h2>
+                <h2 class="title" data-aos="zoom-out-right">Наші квартири</h2>
                 <ul class="flat-section-list">
-                    <li class="flat-section-item">
-                        <img class="flat-section-image" src="./assets/images/flat-standart.jpg" alt="">
-                        <span class="flat-section-name">Стандарт — 1 поверх</span>
+                    <li class="flat-section-item-wrap">
+                        <div class="flat-section-item">
+                            <img class="flat-section-image" src="./assets/images/flat-standart.jpg" alt="">
+                            <span class="flat-section-name">Стандарт — 1 поверх</span>
+                            <div class="flat-section-overlay">
+                                <p>Номери категорії Стандарт ідеально підходять для одномісного розміщення. Класичний інтер'єр, меблі з натурального дерева. Середня площа номера від 17м² до 19,5м² з одним великим ліжком (180x200см). Вікна номерів виходять у двір і місто. Максимальне розміщення гостей в номері - 3.</p>
+                            </div>
+                        </div>
                     </li>
-                    <li class="flat-section-item">
-                        <img class="flat-section-image" src="./assets/images/flat-standart.jpg" alt="">
-                        <span class="flat-section-name">Комфорт — 2 поверхи</span>
+                    <li class="flat-section-item-wrap">
+                        <div class="flat-section-item">
+                            <img class="flat-section-image" src="./assets/images/flat-standart.jpg" alt="">
+                            <span class="flat-section-name">Комфорт — 2 поверхи</span>
+                        </div>
                     </li>
-                    <li class="flat-section-item">
-                        <img class="flat-section-image" src="./assets/images/flat-standart.jpg" alt="">
-                        <span class="flat-section-name">Люкс — 3 поверхи</span>
+                    <li class="flat-section-item-wrap">
+                        <div class="flat-section-item">
+                            <img class="flat-section-image" src="./assets/images/flat-standart.jpg" alt="">
+                            <span class="flat-section-name">Люкс — 3 поверхи</span>
+                        </div>
                     </li>
-                    <li class="flat-section-item">
-                        <img class="flat-section-image" src="./assets/images/flat-standart.jpg" alt="">
-                        <span class="flat-section-name">Супер Люкс — 4 поверхи</span>
+                    <li class="flat-section-item-wrap">
+                        <div class="flat-section-item">
+                            <img class="flat-section-image" src="./assets/images/flat-standart.jpg" alt="">
+                            <span class="flat-section-name">Супер Люкс — 4 поверхи</span>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
         <section class="section">
             <div class="container">
-                <h2 class="title">Ціни</h2>
+                <h2 class="title" data-aos="zoom-out-right">Ціни</h2>
                 <table class="prices-table">
                     <caption>Каталог типів квартир за ціною</caption>
                     <thead>
@@ -198,19 +210,19 @@
         </section>
         <section class="cta-section section">
             <div class="container">
-                <h2 class="title">Хочете подивитися?</h2>
+                <h2 class="title" data-aos="zoom-out-right">Хочете подивитися?</h2>
                 <p class="cta-section-text">
                     Житловий комплекс в історичному центрі міста HouseVOP завершив будівництво та здав 
                     об’єкт в експлаутацію <time datetime="2021-03-11">11 березня 2021 року</time>. Якщо ви маєте бажання подивитися квартиру, 
                     чекаємо на Вас. Тут просто повинен бути будь-який текст, для того щоб збільшити його 
                     об’єм, тому що фанатазії придумати щось нове - вже немає. Якщо у когось є ідея - завжди велкам!
                 </p>
-                <button class="button" type="button">Подивитись район</button>
+                <button class="button" type="button" data-modal-open>Подивитись район</button>
             </div>
         </section>
         <section class="section">
             <div class="container">
-                <h2 class="title">Район на мапі</h2>
+                <h2 class="title" data-aos="zoom-out-right">Район на мапі</h2>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.6153130853136!2d-47.89467269821356!3d-15.793063318888567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2fe53c69c215%3A0xd7704b3f4eccf40d!2sMeli%C3%A1%20Brasil%2021!5e0!3m2!1suk!2sde!4v1654711082400!5m2!1suk!2sde"
                     width="100%" 
@@ -302,5 +314,17 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-close-button" type="button" data-modal-close>X</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
