@@ -46,6 +46,10 @@ address {
     font-style: normal;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
 img,
 video {
     max-width: 100%;
@@ -77,6 +81,10 @@ p {
 
     --font-family-primary: 'Raleway', sans-serif;
     --font-family-title: 'Playfair Display', serif;
+
+    --input-color-text: #fff;
+    --input-color-background: #565b60;
+    --input-color-placeholder: #bebebe;
 }
 
 /* Base */
@@ -476,6 +484,61 @@ main {
     font-style: normal;
 }
 
+/* Form field */
+.form-field {
+    margin-bottom: 1.5rem;
+}
+
+.form-field-title {
+    margin-bottom: 1rem;
+}
+
+.form-field-label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-field-range {
+    width: 100%;
+}
+
+.form-field-input {
+    width: 100%;
+    height: 50px;
+    padding: 0.75rem 1rem;
+    color: var(--input-color-text);
+    font-family: inherit;
+    background-color: var(--input-color-background);
+    border: 0;
+}
+
+.form-field-input::placeholder {
+    color: var(--input-color-placeholder);
+}
+
+.form-field-textarea {
+    height: 8.75rem;
+    resize: none;
+}
+
+.form-field-button {
+    width: 100%;
+}
+
+/* .form-field-inner {
+    position: relative;
+}
+
+.form-field-icon {
+    position: absolute;
+    top: 50%;
+    left: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: white;
+    transform: translateY(-50%);
+} */
+
 /* Modal */
 .backdrop {
     position: fixed;
@@ -493,12 +556,22 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
+    overflow-y: auto;
     transform: translate(-50%, -50%);
     width: 540px;
-    min-height: 600px;
+    max-height: 600px;
+    height: 100%;
     background-color: var(--color-background-primary);
     box-shadow: 0px 0px 6px 6px rgba(255, 255, 255, 0.25);
     border-radius: 4px;
+}
+
+.modal-inner {
+    padding: 2.5rem 3rem;
+}
+
+.modal-title {
+    margin-bottom: 2rem;
 }
 
 .modal-close-button {
