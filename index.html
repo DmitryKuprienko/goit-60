@@ -11,24 +11,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&display=swap" rel="stylesheet"> -->
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <div class="header-inner">
+            <div class="header__inner">
                 <a href="/">
                     <img src="./assets/images/logo.svg" width="165" height="70" alt="Житловий комплекс HouseVop">
                 </a>
-                <nav class="header-menu">
-                    <ul class="header-menu-list">
-                        <li class="header-menu-item">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
                             <a class="link" href="#">Про комплекс</a>
                         </li>
-                        <li class="header-menu-item">
+                        <li class="menu__item">
                             <a class="link" href="#">Район</a>
                         </li>
-                        <li class="header-menu-item">
+                        <li class="menu__item">
                             <a class="link" href="#">Каталог квартир</a>
                             <div class="submenu">
                                 <ul class="submenu-list">
@@ -47,10 +47,10 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="header-menu-item">
+                        <li class="menu__item">
                             <a class="link" href="#">Іпотека</a>
                         </li>
-                        <li class="header-menu-item">
+                        <li class="menu__item">
                             <a class="link" href="#">Контакти</a>
                         </li>
                     </ul>
@@ -61,36 +61,22 @@
     <main>
         <section class="hero-section section">
             <div class="container">
-                <div class="hero-section-inner">
-                    <h1 class="hero-section-title title">Житловий комплекс в історичному центрі</h1>
-                    <a class="hero-section-mouse" href="#benefits">
-                        <!-- <img src="./assets/images/icons/mouse.svg" alt="Перейти до наступної секції"> -->
-
-                        <!-- <svg width="40" height="40" viewBox="0 0 40 40" aria-label="Перейти до наступної секції">
-                            <g clip-path="url(#clip0_1_20)">
-                            <path d="M19.9689 0C13.4811 0 8.20313 5.27802 8.20313 11.7657V28.2343C8.20313 34.722 13.4811 40 19.9689 40C26.4566 40 31.7346 34.722 31.7346 28.2343V11.7657C31.7346 5.27802 26.4566 0 19.9689 0ZM29.3347 28.2343C29.3347 33.3984 25.1331 37.6001 19.9689 37.6001C14.8047 37.6001 10.603 33.3984 10.603 28.2343V11.7657C10.603 6.60156 14.8047 2.3999 19.9689 2.3999C25.1331 2.3999 29.3347 6.60156 29.3347 11.7657V28.2343Z" fill="#D4C17F"/>
-                            <path d="M19.9692 7.95715C19.3063 7.95715 18.7692 8.49426 18.7692 9.1571V14.6802C18.7692 15.3427 19.3063 15.8801 19.9692 15.8801C20.6317 15.8801 21.1691 15.3427 21.1691 14.6802V9.1571C21.1691 8.49426 20.632 7.95715 19.9692 7.95715Z" fill="#D4C17F"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_1_20">
-                            <rect width="40" height="40" fill="white"/>
-                            </clipPath>
-                            </defs>
-                        </svg> -->
-
-                        <svg class="hero-section-mouse-icon" aria-label="Перейти до наступної секції">
+                <div class="hero-section__inner">
+                    <h1 class="hero-section__title title title--large">Житловий комплекс в історичному центрі</h1>
+                    <a class="hero-section__mouse" href="#benefits">
+                        <svg class="hero-section__mouse-icon" aria-label="Перейти до наступної секції">
                             <use href="./assets/images/icons.svg#icon-mouse"></use>
                         </svg>
                     </a>
-                    <address class="contact">
-                        <a class="contact-link link" href="#">
-                            <svg class="contact-icon" aria-hidden="true">
+                    <address class="hero-section__contacts">
+                        <a class="hero-section__contact-link link" href="#">
+                            <svg class="hero-section__contact-icon" aria-hidden="true">
                                 <use href="./assets/images/icons.svg#icon-placeholder"></use>
                             </svg>
                             вул. Садова 10-15
                         </a>
-                        <a class="contact-link link" href="tel:+380991234567">
-                            <svg class="contact-icon" aria-hidden="true">
+                        <a class="hero-section__contact-link link" href="tel:+380991234567">
+                            <svg class="hero-section__contact-icon" aria-hidden="true">
                                 <use href="./assets/images/icons.svg#icon-phone"></use>
                             </svg>
                             +38 (099) 123-45-67
@@ -101,7 +87,7 @@
         </section>
         <section class="section" id="benefits">
             <div class="container">
-                <h2 class="title visually-hidden">Наші переваги</h2>
+                <h2 class="section__title title visually-hidden">Наші переваги</h2>
                 <ul class="benefit-list">
                     <li class="benefit-item">
                         <svg class="benefit-icon" aria-hidden="true">
@@ -132,33 +118,33 @@
         </section>
         <section class="flat-section section">
             <div class="container">
-                <h2 class="title" data-aos="zoom-out-right">Наші квартири</h2>
-                <ul class="flat-section-list">
-                    <li class="flat-section-item-wrap">
-                        <div class="flat-section-item">
-                            <img class="flat-section-image" src="./assets/images/flat-standart.jpg" alt="">
-                            <span class="flat-section-name">Стандарт — 1 поверх</span>
-                            <div class="flat-section-overlay">
+                <h2 class="section__title title" data-aos="zoom-out-right">Наші квартири</h2>
+                <ul class="flat-section__list">
+                    <li class="flat-section__item-wrap">
+                        <div class="flat-item">
+                            <img class="flat-item__image" src="./assets/images/flat-standart.jpg" alt="">
+                            <span class="flat-item__name">Стандарт — 1 поверх</span>
+                            <div class="flat-item__overlay">
                                 <p>Номери категорії Стандарт ідеально підходять для одномісного розміщення. Класичний інтер'єр, меблі з натурального дерева. Середня площа номера від 17м² до 19,5м² з одним великим ліжком (180x200см). Вікна номерів виходять у двір і місто. Максимальне розміщення гостей в номері - 3.</p>
                             </div>
                         </div>
                     </li>
-                    <li class="flat-section-item-wrap">
-                        <div class="flat-section-item">
-                            <img class="flat-section-image" src="./assets/images/flat-standart.jpg" alt="">
-                            <span class="flat-section-name">Комфорт — 2 поверхи</span>
+                    <li class="flat-section__item-wrap">
+                        <div class="flat-item">
+                            <img class="flat-item__image" src="./assets/images/flat-standart.jpg" alt="">
+                            <span class="flat-item__name">Комфорт — 2 поверхи</span>
                         </div>
                     </li>
-                    <li class="flat-section-item-wrap">
-                        <div class="flat-section-item">
-                            <img class="flat-section-image" src="./assets/images/flat-standart.jpg" alt="">
-                            <span class="flat-section-name">Люкс — 3 поверхи</span>
+                    <li class="flat-section__item-wrap">
+                        <div class="flat-item">
+                            <img class="flat-item__image" src="./assets/images/flat-standart.jpg" alt="">
+                            <span class="flat-item__name">Люкс — 3 поверхи</span>
                         </div>
                     </li>
-                    <li class="flat-section-item-wrap">
-                        <div class="flat-section-item">
-                            <img class="flat-section-image" src="./assets/images/flat-standart.jpg" alt="">
-                            <span class="flat-section-name">Супер Люкс — 4 поверхи</span>
+                    <li class="flat-section__item-wrap">
+                        <div class="flat-item">
+                            <img class="flat-item__image" src="./assets/images/flat-standart.jpg" alt="">
+                            <span class="flat-item__name">Супер Люкс — 4 поверхи</span>
                         </div>
                     </li>
                 </ul>
@@ -166,7 +152,7 @@
         </section>
         <section class="section">
             <div class="container">
-                <h2 class="title" data-aos="zoom-out-right">Ціни</h2>
+                <h2 class="section__title title" data-aos="zoom-out-right">Ціни</h2>
                 <table class="prices-table">
                     <caption>Каталог типів квартир за ціною</caption>
                     <thead>
@@ -210,7 +196,7 @@
         </section>
         <section class="cta-section section">
             <div class="container">
-                <h2 class="title" data-aos="zoom-out-right">Хочете подивитися?</h2>
+                <h2 class="section__title title" data-aos="zoom-out-right">Хочете подивитися?</h2>
                 <p class="cta-section-text">
                     Житловий комплекс в історичному центрі міста HouseVOP завершив будівництво та здав 
                     об’єкт в експлаутацію <time datetime="2021-03-11">11 березня 2021 року</time>. Якщо ви маєте бажання подивитися квартиру, 
@@ -222,7 +208,7 @@
         </section>
         <section class="section">
             <div class="container">
-                <h2 class="title" data-aos="zoom-out-right">Район на мапі</h2>
+                <h2 class="section__title title" data-aos="zoom-out-right">Район на мапі</h2>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.6153130853136!2d-47.89467269821356!3d-15.793063318888567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2fe53c69c215%3A0xd7704b3f4eccf40d!2sMeli%C3%A1%20Brasil%2021!5e0!3m2!1suk!2sde!4v1654711082400!5m2!1suk!2sde"
                     width="100%" 
@@ -234,7 +220,7 @@
         </section>
         <section class="video-section section">
             <div class="container">
-                <h2 class="title visually-hidden">Відео огляд житлового комплексу</h2>
+                <h2 class="section__title title visually-hidden">Відео огляд житлового комплексу</h2>
                 <div class="video-section-inner">
                     <video class="video-section-content" controls loop muted>
                         <source src="./assets/videos/test_video.webm" type="video/webm">
@@ -315,7 +301,7 @@
         </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-close-button" type="button" data-modal-close>X</button>
             <div class="modal-inner">

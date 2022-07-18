@@ -1,0 +1,12 @@
+/* .flat-section {} */
+
+.flat-section__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.flat-section__item-wrap {
+    flex-basis: 50%;
+    padding: 16px;
+}
