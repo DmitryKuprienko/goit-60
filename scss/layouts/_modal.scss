@@ -22,18 +22,27 @@
     background-color: var(--color-background-primary);
     box-shadow: 0px 0px 6px 6px rgba(255, 255, 255, 0.25);
     border-radius: 4px;
-}
 
-.modal-inner {
-    padding: 2.5rem 3rem;
-}
+    &__inner {
+        padding: 2.5rem 3rem;
+    }
+    
+    &__title {
+        margin-bottom: 2rem;
+    }
+    
+    &__close-button {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
 
-.modal-title {
-    margin-bottom: 2rem;
-}
-
-.modal-close-button {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+    &__form-title {
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+    
+    &__form-field {
+        margin-bottom: 1.5rem;
+    }
 }

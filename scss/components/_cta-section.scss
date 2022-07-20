@@ -7,6 +7,25 @@
     background-attachment: fixed;
 }
 
-.cta-section-text {
-    margin-bottom: 24px;
+.cta-section__inner {
+    display: flex;
+}
+
+.cta-section__text {
+    max-width: 28rem;
+    margin-right: 4rem;
+}
+
+.cta-section__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.cta-section__form-field {
+    flex-basis: calc(50% - 0.75rem);
+}
+
+.cta-section__button {
+    align-self: flex-end;
 }

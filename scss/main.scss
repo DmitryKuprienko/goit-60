@@ -10,13 +10,14 @@
 @import './layouts/modal';
 
 @import './ui/button';
+@import './ui/checkbox';
+@import './ui/form-field';
 @import './ui/link';
 
 @import './components/benefits-section';
 @import './components/cta-section';
 @import './components/flat-item';
 @import './components/flat-section';
-@import './components/forms';
 @import './components/hero-section';
 @import './components/prices-section';
 @import './components/section';
@@ -25,3 +26,6 @@
 @import './components/video-section';
 
 @import './utils/hidden';
+@import './utils/indents';
+@import './utils/mixins';
+@import './utils/placeholders';
