@@ -6,63 +6,76 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
 
-.hero-section__inner {
-    text-align: center;
-}
+    &__inner {
+        text-align: center;
+    }
+    
+    &__title {
+        margin-bottom: 100px;
 
-.hero-section__title {
-    max-width: 556px;
-    margin: 0 auto 100px;
-}
+        @media (min-width: 480px) {
+            max-width: 556px;
+            margin: 0 auto 100px;
+        }
+    }
+    
+    &__mouse {
+        margin-bottom: 200px;
+        /* animation-name: bounce;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-delay: 0.5s;
+        animation-iteration-count: 2;
+        animation-direction: alternate; */
+        animation: bounce 3s linear infinite alternate;
+    }
+    
+    &__mouse:hover {
+        animation-play-state: paused;
+    }
+    
+    &__mouse-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: var(--color-accent);
+    }
+    
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-.hero-section__mouse {
-    margin-bottom: 200px;
-    /* animation-name: bounce;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-delay: 0.5s;
-    animation-iteration-count: 2;
-    animation-direction: alternate; */
-    animation: bounce 3s linear infinite alternate;
-}
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+    
+    &__contact-link {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__contact-link + &__contact-link {
+        margin-top: 24px;
 
-.hero-section__mouse:hover {
-    animation-play-state: paused;
-}
-
-.hero-section__mouse-icon {
-    width: 2.5rem;
-    height: 2.5rem;
-    fill: var(--color-accent);
-}
-
-/* Contact */
-.hero-section__contacts {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-section__contact-link {
-    display: flex;
-    align-items: center;
-}
-
-.hero-section__contact-link + .hero-section__contact-link {
-    margin-left: 130px;
-}
-
-.hero-section__contact-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 0.5rem;
-    fill: var(--color-primary);
-}
-
-.hero-section__contact-link:hover .hero-section__contact-icon {
-    fill: var(--color-accent);
+        @media (min-width: 768px) {
+            margin-top: 0;
+            margin-left: 130px;
+        }
+    }
+    
+    &__contact-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 0.5rem;
+        fill: var(--color-primary);
+    }
+    
+    &__contact-link:hover &__contact-icon {
+        fill: var(--color-accent);
+    }
 }
 
 @keyframes bounce {

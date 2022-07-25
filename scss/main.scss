@@ -1,19 +1,24 @@
+/* Base */
 @import './base/fonts';
 @import './base/normalize';
 @import './base/variables';
 @import './base/base';
 
+/* Layouts */
 @import './layouts/container';
 @import './layouts/footer';
 @import './layouts/header';
 @import './layouts/menu';
+@import './layouts/mobile-menu';
 @import './layouts/modal';
 
+/* UI */
 @import './ui/button';
 @import './ui/checkbox';
 @import './ui/form-field';
 @import './ui/link';
 
+/* Components */
 @import './components/benefits-section';
 @import './components/cta-section';
 @import './components/flat-item';
@@ -25,6 +30,8 @@
 @import './components/title';
 @import './components/video-section';
 
+/* Utils */
+@import './utils/breakpoints';
 @import './utils/hidden';
 @import './utils/indents';
 @import './utils/mixins';

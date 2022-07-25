@@ -1,3 +1,5 @@
+@import '../utils/breakpoints';
+
 .header {
     position: fixed;
     z-index: 10;
@@ -6,10 +8,30 @@
     width: 100%;
     padding: 1.5rem 0;
     background-image: linear-gradient(0deg, transparent 0%, var(--color-background-primary) 100%);
-}
 
-.header__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__desktop-menu {
+        display: none;
+
+        @include for-tablet-up {
+            display: block;
+        }
+    }
+
+    &__mobile-menu {
+        @include for-tablet-up {
+            display: none;
+        }
+    }
+
+    &__open-menu {
+        @include for-tablet-up {
+            display: none;
+        }
+    }
 }

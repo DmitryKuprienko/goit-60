@@ -1,12 +1,12 @@
-/* .menu {} */
-
-.menu__list {
-    display: flex;
-    align-items: center;
-}
-
-.menu__item {
-    position: relative;
+.menu {
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__item {
+        position: relative;
+    }
 }
 
 /* Submenu */

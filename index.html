@@ -20,7 +20,7 @@
                 <a href="/">
                     <img src="./assets/images/logo.svg" width="165" height="70" alt="Житловий комплекс HouseVop">
                 </a>
-                <nav class="menu">
+                <nav class="header__desktop-menu menu">
                     <ul class="menu__list">
                         <li class="menu__item">
                             <a class="link" href="#">Про комплекс</a>
@@ -53,6 +53,17 @@
                         <li class="menu__item">
                             <a class="link" href="#">Контакти</a>
                         </li>
+                    </ul>
+                </nav>
+                <button class="header__open-menu" data-mobile-menu-open>Open</button>
+                <nav class="header__mobile-menu mobile-menu is-hidden" data-mobile-menu>
+                    <button class="header__close-menu" type="button" data-mobile-menu-close>Close</button>
+                    <ul class="mobile-menu__list">
+                        <li><a href="#" class="mobile-menu__link link">Про комплекс</a></li>
+                        <li><a href="#" class="mobile-menu__link link">Район</a></li>
+                        <li><a href="#" class="mobile-menu__link link">Каталог квартир</a></li>
+                        <li><a href="#" class="mobile-menu__link link">Іпотека</a></li>
+                        <li><a href="#" class="mobile-menu__link link">Контакти</a></li>
                     </ul>
                 </nav>
             </div>
@@ -460,6 +471,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

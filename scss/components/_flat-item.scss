@@ -19,9 +19,14 @@
     
     &__name {
         position: absolute;
-        bottom: 2.5rem;
-        left: 3rem;
+        bottom: 1.5rem;
+        left: 2rem;
         display: block;
+
+        @media (min-width: 768px) {
+            bottom: 2.5rem;
+            left: 3rem;
+        }
     }
 
     &__overlay {
