@@ -4,6 +4,13 @@
 @import './base/variables';
 @import './base/base';
 
+/* Utils */
+@import './utils/breakpoints';
+@import './utils/hidden';
+@import './utils/indents';
+@import './utils/mixins';
+@import './utils/placeholders';
+
 /* Layouts */
 @import './layouts/container';
 @import './layouts/footer';
@@ -29,10 +36,3 @@
 @import './components/socials';
 @import './components/title';
 @import './components/video-section';
-
-/* Utils */
-@import './utils/breakpoints';
-@import './utils/hidden';
-@import './utils/indents';
-@import './utils/mixins';
-@import './utils/placeholders';

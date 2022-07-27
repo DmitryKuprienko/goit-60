@@ -55,7 +55,9 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="header__open-menu" data-mobile-menu-open>Open</button>
+                <button class="header__open-menu" data-mobile-menu-open>
+                    <span class="header__open-icon"></span>
+                </button>
                 <nav class="header__mobile-menu mobile-menu is-hidden" data-mobile-menu>
                     <button class="header__close-menu" type="button" data-mobile-menu-close>Close</button>
                     <ul class="mobile-menu__list">
@@ -133,31 +135,46 @@
                 <ul class="flat-section__list">
                     <li class="flat-section__item-wrap">
                         <div class="flat-item">
-                            <img class="flat-item__image" src="./assets/images/flat-standart.jpg" alt="">
+                            <picture>
+                                <source srcset="./assets/images/flat-standart.jpg" media="(min-width: 480px)">
+                                <img class="flat-item__image" src="./assets/images/flat-comfort.jpg" alt="Квартира варіанту Стандарт">
+                            </picture>
+                            <!-- <picture>
+                                <source srcset="./assets/images/flat-standart.webp 1x, ./assets/images/flat-standart@2x.webp 2x" type="image/webp">
+                                <source srcset="./assets/images/flat-standart@2x.jpg 2x" type="image/jpg">
+                                <img class="flat-item__image" src="./assets/images/flat-standart.jpg" alt="Квартира варіанту Стандарт">
+                            </picture> -->
+                            <!-- <img
+                                class="flat-item__image"
+                                srcset="./assets/images/flat-standart@2x.jpg 2x"
+                                src="./assets/images/flat-standart.jpg"
+                                alt="Квартира варіанту Стандарт"
+                            > -->
+                            <!-- <img class="flat-item__image" src="./assets/images/flat-standart.jpg" alt=""> -->
                             <span class="flat-item__name">Стандарт — 1 поверх</span>
                             <div class="flat-item__overlay">
                                 <p>Номери категорії Стандарт ідеально підходять для одномісного розміщення. Класичний інтер'єр, меблі з натурального дерева. Середня площа номера від 17м² до 19,5м² з одним великим ліжком (180x200см). Вікна номерів виходять у двір і місто. Максимальне розміщення гостей в номері - 3.</p>
                             </div>
                         </div>
                     </li>
-                    <li class="flat-section__item-wrap">
+                    <!-- <li class="flat-section__item-wrap">
                         <div class="flat-item">
-                            <img class="flat-item__image" src="./assets/images/flat-standart.jpg" alt="">
+                            <img class="flat-item__image" srcset="./assets/images/flat-standart@2x.jpg 2x" src="./assets/images/flat-standart.jpg" alt="">
                             <span class="flat-item__name">Комфорт — 2 поверхи</span>
                         </div>
                     </li>
                     <li class="flat-section__item-wrap">
                         <div class="flat-item">
-                            <img class="flat-item__image" src="./assets/images/flat-standart.jpg" alt="">
+                            <img class="flat-item__image" srcset="./assets/images/flat-standart@2x.jpg 2x" src="./assets/images/flat-standart.jpg" alt="">
                             <span class="flat-item__name">Люкс — 3 поверхи</span>
                         </div>
                     </li>
                     <li class="flat-section__item-wrap">
                         <div class="flat-item">
-                            <img class="flat-item__image" src="./assets/images/flat-standart.jpg" alt="">
+                            <img class="flat-item__image" srcset="./assets/images/flat-standart@2x.jpg 2x" src="./assets/images/flat-standart.jpg" alt="">
                             <span class="flat-item__name">Супер Люкс — 4 поверхи</span>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </section>
